@@ -294,14 +294,14 @@ input:checked + .slider:before {
 	
 }
 
-#res-hr1 {
+.res-hr1 {
 	margin-top: 5px;
 	border-top: solid rgba(138,109,59,.6) 2px;
 	padding: 1px 0px 0px 0px;
 	border-bottom: solid rgba(138,109,59,.6) 2px;
 }
 
-#res-hr2 {
+.res-hr2 {
 	margin-top: 20px;
 	border-top: solid rgba(138,109,59,.3) 2px;
 	/*padding: 1px 0px 0px 0px;*/
@@ -364,6 +364,58 @@ input:checked + .slider:before {
 
 #res-personal-profile{
 
+}
+
+/*********************CONTACT*********************/
+
+#contact{
+    background-color:#f1f1f1;
+  	font-family: 'EB Garamond', seri;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+  	-webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  	-webkit-text-stroke-width: none;
+  	-webkit-text-stroke-color: none;
+}
+
+#contact .well{
+    /*margin-top:30px;*/
+    border-radius:0;
+    width: 83%;
+    border:none;
+    background-color: rgb(0,0,0,0);
+}
+
+#contact .form-group{
+	width:260px;
+}
+
+#contact .form-control{
+    border-radius: 0;
+    border:2px solid #1e1e1e;
+}
+
+#contact button{
+    border-radius:0;
+    border:2px solid #1e1e1e;
+}
+
+#contact .row{
+    margin-bottom:30px;
+}
+
+@media (max-width: 768px) { 
+    #contact iframe {
+        margin-bottom: 15px;
+    }
+    
+}
+.map{
+	margin-left: 20px;
+}
+
+.form {
+	/*width: 100%;*/
+	margin-left: 20px;
 }
 
 /*********************FOOTER*********************/
