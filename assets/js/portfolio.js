@@ -71,17 +71,26 @@
 			//$("body").css("background", "black");
 			$("body").toggleClass("dayColors");
 			$(".navbar-inverse").toggleClass("navbarDay");
+			$(".footer").toggleClass("footer-day");
+
 
 			// alert(window.location.hash);
 			isDay = !isDay;
 			if(isDay){
+				$(".fa-sun").css("-webkit-text-fill-color", "#e8d653");
+				$(".fa-moon").css("-webkit-text-fill-color", "#bbbbbb");
+				//$(".slider:before").css("color","#000000");
+				$("a").css("background-color", "rgb(0,0,0,0)");
 				$(".navbar-inverse .navbar-nav > .active > a").css("background-color", "#93e0fb");
-				$(".navbar-inverse .navbar-nav > .active > a").css("border-radius", "15% 15% 0 0");
+				// $(".navbar-inverse .navbar-nav > .active > a").css("border-radius", "15% 15% 0 0");
 				//$(this).css("background-color", "#93e0fb");
 			}
 			else{
-				$(".navbar-inverse .navbar-nav > .active > a").css("background-color", "#1e3148");
-				$(".navbar-inverse .navbar-nav > .active > a").css("border-radius", "15% 15% 0 0");
+				$(".fa-sun").css("-webkit-text-fill-color", "#bbbbbb");
+				$(".fa-moon").css("-webkit-text-fill-color", "#5e6fd1");
+				$("a").css("background-color", "rgb(0,0,0,0)");
+				$(".navbar-inverse .navbar-nav > .active > a").css("background-color", "rgb(14,32,50,.9)");
+				// $(".navbar-inverse .navbar-nav > .active > a").css("border-radius", "15% 15% 0 0");
 				//$(this).css("background-color", "#1e3148");
 			}
 
@@ -102,15 +111,15 @@
     			// $(this).css("border-radius", "15% 15% 0 0");
     			$("a").css("background-color", "rgb(0,0,0,0)");
     			$(this).css("background-color", "#93e0fb");
-    			$(this).css("border-radius", "15% 15% 0 0");
+    			// $(this).css("border-radius", "15% 15% 0 0");
     		}
     		else{
     			// $("a").css("background-color", "rgb(0,0,0,0)");
     			// $(this).css("background-color", "#1e3148");
     			// $(this).css("border-radius", "15% 15% 0 0");
     			// $(this).css("box-shadow", "inset 0 0 30px black;");
-    			// $("a").css("background-color", "rgb(0,0,0,0)");
-    			// $(this).css("background-color", "rgb(44,62,80,.9)");
+    			$("a").css("background-color", "rgb(0,0,0,0)");
+    			$(this).css("background-color", "rgb(14,32,50,.9)");
     			// document.getElementById(this.parent).style.display = 'none';
     			// document.getElementById(this.parent).style.display = 'block';
 
@@ -135,6 +144,73 @@
                 event.preventDefault();
                 $(this).ekkoLightbox();
             });
+
+
+
+ //    //CHESS
+ //    // var board = ChessBoard("board", "start");
+ //    var board,
+	//   game = new Chess();
+
+	// // do not pick up pieces if the game is over
+	// // only pick up pieces for White
+	// var onDragStart = function(source, piece, position, orientation) {
+	//   if (game.in_checkmate() === true || game.in_draw() === true ||
+	//     piece.search(/^b/) !== -1) {
+	//     return false;
+	//   }
+	// };
+
+	// var makeRandomMove = function() {
+	//   var possibleMoves = game.moves();
+
+	//   // game over
+	//   if (possibleMoves.length === 0) return;
+
+	//   var randomIndex = Math.floor(Math.random() * possibleMoves.length);
+	//   game.move(possibleMoves[randomIndex]);
+	//   board.position(game.fen());
+	// };
+
+	// var onDrop = function(source, target) {
+	//   // see if the move is legal
+	//   var move = game.move({
+	//     from: source,
+	//     to: target,
+	//     promotion: 'q' // NOTE: always promote to a queen for example simplicity
+	//   });
+
+	//   // illegal move
+	//   if (move === null) return 'snapback';
+
+	//   // make random legal move for black
+	//   window.setTimeout(makeRandomMove, 250);
+	// };
+
+	// // update the board position after the piece snap
+	// // for castling, en passant, pawn promotion
+	// var onSnapEnd = function() {
+	//   board.position(game.fen());
+	// };
+
+	// var cfg = {
+	//   draggable: true,
+	//   position: 'start',
+	//   onDragStart: onDragStart,
+	//   onDrop: onDrop,
+	//   onSnapEnd: onSnapEnd
+	// };
+	// board = ChessBoard('board', cfg);
+
+    // var Chess = require('./chess').Chess;
+	// var chess = new Chess();
+
+	// while (!chess.game_over()) {
+	//   var moves = chess.moves();
+	//   var move = moves[Math.floor(Math.random() * moves.length)];
+	//   chess.move(move);
+	// }
+	// console.log(chess.pgn());
 
 
 // $(".navbar-inverse").on("click", function(){

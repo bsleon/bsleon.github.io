@@ -67,7 +67,7 @@ h3 {
 
 #myPic {
 	width: 200px;
-	margin: 30px 30px 30px 0;
+	margin: 30px 30px 30px 0px;
 	float:left;
 	/*height: 200px;*/
 	-webkit-box-shadow: -12px 25px 48px 0px rgba(0,0,0,0.44);
@@ -115,7 +115,7 @@ h3 {
 
 .navbarDay {
 	background: #2cd4ef;
-		box-shadow: inset 0 0 30px white;
+	box-shadow: inset 0 0 30px white;
 }
 
 .activeNavDay {
@@ -137,9 +137,9 @@ h3 {
 .navbar-inverse .navbar-nav > .active > a:focus {
 	 /*background-color:  #1e3148;*/
     color: white;
-    background:rgb(44,62,80,.9);
+    background:rgb(14,32,50,.9);
 	background-image: url('../images/texture.png');
-	box-shadow: inset 0 0 30px black;
+	/*box-shadow: inset 0 0 30px black;*/
     /*border-radius: 15% 15% 0 0;*/
 }
 
@@ -185,7 +185,8 @@ h3 {
 .fa-moon {
 	font-size: 1.5em;
 	/*float:right;*/
-	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	/*-webkit-text-fill-color: white;  Will override color (regardless of order) */
+	-webkit-text-fill-color: #5e6fd1;
 	-webkit-text-stroke-width: .5px;
   	-webkit-text-stroke-color: black;
 }
@@ -369,7 +370,8 @@ input:checked + .slider:before {
 /*********************CONTACT*********************/
 
 #contact{
-    background-color:#f1f1f1;
+    background-color:#d5dbf5;
+    background-image: url('../images/paper.png');
   	font-family: 'EB Garamond', seri;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
   	-webkit-text-fill-color: black; /* Will override color (regardless of order) */
@@ -418,6 +420,25 @@ input:checked + .slider:before {
 	margin-left: 20px;
 }
 
+.contact-hr1 {
+	/*margin-top: 5px;*/
+	margin-left: 35px;
+	border-top: solid rgba(0,0,0,1) 2px;
+	padding: 1px 0px 0px 0px;
+	border-bottom: solid rgba(0,0,0,1) 2px;
+	/*float:left;*/
+	width: 65%;
+	text-align: center;
+}
+
+.contact-hr2 {
+	margin-top: 20px;
+	/*border-top: solid rgba(138,109,59,.3) 2px;*/
+	border-top: solid rgba(0,0,0,1) 2px;
+	/*padding: 1px 0px 0px 0px;*/
+	/*border-bottom: solid #8a6d3b 2px;*/
+}
+
 /*********************FOOTER*********************/
 
 .page-footer {
@@ -438,6 +459,16 @@ input:checked + .slider:before {
 	/*background:black;*/
 		/*background: rgb(0,0,0,.3);*/
 	/*background-image: url('../images/texture.png');*/
+}
+
+.footer-day{
+	background: #2cd4ef;
+	box-shadow: inset 0 0 30px white;
+}
+
+.footer a {
+	color: inherit;
+    text-decoration: none;
 }
 
 
@@ -464,4 +495,29 @@ input:checked + .slider:before {
 	vertical-align: top;
 	float:left;
 	padding: 1px 0 0 5px;*/
+}
+
+#emptySpace{
+	height: 550px;
+}
+
+/*********************CHESS*********************/
+.board {
+    width: 400px;
+    margin: auto
+}
+
+.chessinfo {
+    width: 400px;
+    margin: auto;
+    color: black;
+}
+
+.move-history {
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+#search-depth {
+	-webkit-text-fill-color: black;
 }
