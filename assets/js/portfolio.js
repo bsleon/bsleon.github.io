@@ -50,7 +50,14 @@
 // });
 //var selector = ".navbar-inverse .navbar-nav > .active > a";
 // $(".slider").click(function(){
+// var resetPressed = false;
 
+$(".reset-board").on('click', function(){
+	// resetPressed = true;
+	board = ChessBoard('board', cfg);
+	game.reset();
+	renderMoveHistory("");
+});
 
 
 	//set active links

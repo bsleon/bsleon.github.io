@@ -314,11 +314,11 @@ var onMouseoverSquare = function(square, piece) {
 
     if (moves.length === 0) return;
 
-    greySquare(square);
+    // greySquare(square);
 
-    for (var i = 0; i < moves.length; i++) {
-        greySquare(moves[i].to);
-    }
+    // for (var i = 0; i < moves.length; i++) {
+    //     greySquare(moves[i].to);
+    // }
 };
 
 var onMouseoutSquare = function(square, piece) {
