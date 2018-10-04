@@ -54,6 +54,14 @@
 	// };
 	// board = ChessBoard('board', cfg);
 
+	$(".reset-board").on('click', function(){
+	// resetPressed = true;
+	board = ChessBoard('board', cfg);
+	game.reset();
+	renderMoveHistory("");
+});
+
+
 var board,
     game = new Chess();
 

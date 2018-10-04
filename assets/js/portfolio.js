@@ -52,12 +52,12 @@
 // $(".slider").click(function(){
 // var resetPressed = false;
 
-$(".reset-board").on('click', function(){
-	// resetPressed = true;
-	board = ChessBoard('board', cfg);
-	game.reset();
-	renderMoveHistory("");
-});
+// $(".reset-board").on('click', function(){
+// 	// resetPressed = true;
+// 	board = ChessBoard('board', cfg);
+// 	game.reset();
+// 	renderMoveHistory("");
+// });
 
 
 	//set active links
@@ -147,10 +147,12 @@ $(".reset-board").on('click', function(){
     });
 
     // BOOTSTRAP LIGHTBOX
+    $(document).ready(function () {
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
                 event.preventDefault();
                 $(this).ekkoLightbox();
             });
+    });
 
 
 
