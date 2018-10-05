@@ -355,6 +355,10 @@ input:checked + .slider:before {
 	padding: 0;
 }
 
+.res-exp {
+	padding-left: 0;
+}
+
 .skill {
 	/*padding-right:20px;*/
 	/*margin-right: 20px;*/
