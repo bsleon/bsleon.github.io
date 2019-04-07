@@ -25,6 +25,7 @@ a img {
 }
 
 .inner {
+  /*max-width: 512px;*/
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -59,6 +60,7 @@ a img {
 .name {
   z-index: 88888;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+  max-width: 256px;
 }
 
 .name a{
@@ -379,8 +381,9 @@ section{
 
 .toc-holder {
   text-align: right;
-/*  //min-width: 60px;*/
+  /*min-width: 60px;*/
   z-index: 30000;
+  /*max-width: 60px;*/
 
 }
 
@@ -543,7 +546,7 @@ ul.toc {
 @media (max-width: 480px) {
   
   .toc-holder {
-    display: none;
+    /*display: none;*/
   }
 
   .mobile-nav {
@@ -592,7 +595,7 @@ ul.toc {
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
 /* STYLES GO HERE */
   .toc-holder {
-    display: none;
+    /*display: none;*/
   }
 
   .mobile-nav {
@@ -650,7 +653,7 @@ ul.toc {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .toc-holder {
-    display: none;
+    /*display: none;*/
   }
 
   .mobile-nav {
