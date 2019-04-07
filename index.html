@@ -1,432 +1,418 @@
+
 <!DOCTYPE html>
-<html>
 <head>
-	<meta name="viewport" content="width=704, initial-scale=.6" charset="utf-8">
-	<title>Portfolio</title>
+	<title>Brandon Leon</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Personal Website">
+	<meta name="keywords" content="brandon leon" />
+	<meta name="author" content="brandon leon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="assets/css/portfolio.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Rokkitt|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'> 
+	<link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>   
+	<link href="assets/css/magnific-popup.css?v=0.9.8" rel="stylesheet" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/portfolio.css">
-
-	<!-- FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-	<!-- JS -->
-	<script type="text/javascript" src="assets/js/lib/jquery-3.3.1.min.js"></script>
-
-	<!-- Lightbox -->
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-
-	
-
-
-
 </head>
-<body class="gradient-1" data-spy="scroll" data-target=".navbar" data-offset="10">
-	<div id="Home" class="links"></div>
+<body>
+	<!-- Navigation -->
+	<div id="toc-holder" class="toc-holder">
+		<a href="#" class="toc-link" id="toc-link"><span>&#9776;</span></a>
+		<ul id="toc" class="toc">
+			<li class="toc-h1"><a href="#about">About</a></li>
+			<li class="toc-h1"><a href="#resume">Résumé</a></li>
+			<li class="toc-h1"><a href="#projects">Projects/Fun</a></li>
+		</ul>
+	</div>
 
-	<!-- navbar -->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<!-- <a href="#" class="navbar-brand"><i class="fas fa-home"></i> HOME</a> -->
-			</div>
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="#Home" class="active"><i class="fas fa-home"></i> Home</a></li>
-					<li><a href="#About">About</a></li>
-					<li><a href="#Resume">Resume</a></li>
-					<li><a href="#Portfolio">Portfolio</a></li>
-					<li><a href="#Photography">Photography</a></li>
-					<li><a href="#Contact">Contact</a></li>
-				</ul>
-				<!-- <ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Sign up</a></li>
-					<li><a href="#">Login</a></li>
-				</ul> -->
-
-				<!-- day and night toggle switch -->
-				<div class="dayNightToggle navbar-right">
-					<div id="sun"><i class="far fa-sun"></i></div>
-					<div id="toggleSwitch">
-						<label class="switch">
-							<input type="checkbox" checked="checked">
-							<span class="slider round"></span>
-						</label>
-					</div>
-
-					<div id="moon"><i class="far fa-moon"></i></div>
+	<div id="page-wrapper">
+		<!-- Header -->
+		<div id="header">
+			<div class="inner name"><a href="#illustration">Brandon Leon</a></div>
+			<div class ="nav">
+				<ul class="mobile-nav">
+					<li class="mobile-header"><a href="#about">About</a></li>
+					<li class="mobile-header"><a href="#resume">Resumé</a></li>
+					<li class="mobile-header"><a href="#projects">Projects/Fun</a></li></ul>
 				</div>
-
 			</div>
-		</div>
-	</nav> <!-- end navbar -->
-
-
-	<!-- JUMBOTRON -->
-	<div class="container">
-		<div class="jumbotron">
-			<!-- <h1><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> The Image Gallery</h1> -->
-			<h1><i class="fas fa-laptop"></i> Brandon Leon</h1>
-			<h3>Computer Scientist, Web Developer, Graphics Designer</h3>
-			<div><img src="assets/images/HelloWorld.jpg" id="jumbotronImage"></div>
-		</div> <!-- end jumbotron -->
-	</div> <!-- end container -->
+			<!-- Illustration -->
+			<div id="illustration"><center><img src="assets/images/HelloWorld.jpg"></center></div>
+			<!-- About Me -->
+			<div id="about"><div class="inner">
+				<!--<p>Hello, world! I'm a developer and designer.</p><br/><br/><br/>-->
 
 
 
+				<p class="tagline">About Me</p>
+				<!-- Console -->
+				<div id="code">
+					<div id="console">
+						&gt; Brandon.origin<br/>
+						<span class="answer">&nbsp;&nbsp;=&gt; "Detroit, MI"<br/><br/></span>
+						&gt; Brandon.education<br/>
+						<span class="answer">&nbsp;&nbsp;=&gt; "University of Michigan-Dearborn"<br/><br/></span>
+						&gt; Brandon.major<br/>
+						<span class="answer">&nbsp;&nbsp;=&gt; "Computer Science"<br/><br/></span>
+						&gt; Brandon.graduationDate<br/>
+						<span class="answer">&nbsp;&nbsp;=&gt; "Aug 2018"<br/><br/></span>
+						&gt; Brandon.interests<br/>
+						<span class="answer">&nbsp;&nbsp;=&gt; ["Design", "Code", "Chess"]<br/><br/></span>
+							<!--&gt; Brandon.workExperience.latest<br/>
+							<span class="answer">&nbsp;&nbsp;=&gt; Latest Work Experience<br/>
+												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; company: "#"<br/>
+												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; role: "#"<br/>
+												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; startDate: "#"<br/>
+												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; endDate: "#"<br/>
+												 <br/></span>-->
+												 &gt; Brandon.resume<br/>
+												 <span class="answer">&nbsp;&nbsp;=&gt; "<a target="_blank" href="assets/resumes/Resume.pdf">resume.pdf</a>"<br/><br/></span>
+							<!--&gt; Brandon.thoughts<br/>
+							<span class="answer">&nbsp;&nbsp;=&gt; ["<a target="_blank" href="#">twitter</a>",
+								 "<a target="_blank" href="http://advancedsettings.tumblr.com">advancedsettings.tumblr.com</a>",
+								 "<a target="_blank" href="#">rdio</a>"]<br/><br/></span>-->
+								 &gt; Brandon.email<br/>
+								 <span class="answer">&nbsp;&nbsp;=&gt; "<a target="_blank" href="mailto:bsleon@umich.edu">bsleon@umich.edu</a>"<br/><br/></span>
 
-	<div class="container">
-		<div id="About" class="links"></div>
-		<div class="info">
-			<p>
-				<div>
-					<img src="assets/images/meThumb.jpg" id="myPic" class="img-circle">
-				</div>
-				<p>Hello! May name is Brandon and I am a recent university graduate of computer science. My interests have always been problem solving and art, so I often like to combine these in website or video game projects. My other hobbies include photography and chess. Please see below for my skills and experience.</p>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-			</div>
 
 
 
+								 <main>
+								 	<section id="home">
+								 		<h2>CLI - Command Line Interface Simulation</h2>
+								 		<p>A fun experiment for displaying simple info in a geeky manner.</p>
+								 		<p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
+								 	</section>
 
-			<div id="Resume" class="links"></div>
-			<div class="info">
-				<div id="res-all">
-					<div id="res-header" class="row">
-						<div id="res-name" class="col-lg-9 col-xs-9">
-							<h1>Brandon Leon</h1>
-							<h3>Recent Computer Science B.S. Graduate</h3>
-						</div>
-						<div id="res-contact" class="col-lg-3 col-xs-3">
-							<div>bsleon@umich.edu</div>
-							<div><a href="https://bsleon.github.io/">bsleon.github.io</a></div>
-							<div>(555)555-5555</div>
-						</div>
-					</div>
-					<!-- <hr class="style2" id="res-hr"> -->
-					<div class="res-hr1"></div>
-					<div id="res-body">
+								 	<section id="about me">
+								 		<h2><span>&raquo;About</span></h2>
+								 		<p>This is an experiment built by  for showcasing a user profile or cv in an unusual but original way by simulating a command line interface. It's nothing more than the usual hidden elements triggered by some jQuery to show/hide each section of content, based on input values.</p>
+								 		<p>It makes use of  for the fancy letter animations.</p>
+								 	</section>
 
-						<div id="res-personal-profile" class="row">
-							<div class="res-title col-lg-3"><h2>Personal Profile</h2></div>
-							<div class="res-desc col-lg-9">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							</div>
-						</div>
-						<div class="res-hr2"></div>
+								 	<section id="usage">
+								 		<h2><span>&raquo;Usage</span></h2>
+								 		<p>Using it is pretty straight forward. Create several(as much as you need) divs or &laquo;section&raquo; elements each with it's unique id to hold your content. Make sure to have an error section (id="error") with some information to warn the user when he/she mistypes a command or if there is no section with that name, think of it as a 404 page.</p>
+								 		<p>A section with id="help" is also required so you can list all the available sections and let your users know what words to write to access that particular content.</p>
+								 		<p>The input field must be a standalone element and must not be placed inside any of the content divs or sections, and make sure you give it a classname "command", if you want to name it anything else you need to edit the app.js and change all instances of .command in the script to match your chosen classname.</p>
+								 		<p>In short, just view the source code of this demo, copy/modify it to your liking making sure you include the error and help sections.</p>
+								 	</section>
 
-						<div id="res-education" class="row">
-							<div class="res-title col-lg-3"><h2>Education</h2></div>
-							<div class="res-desc col-lg-9">
-								<h3 class="h2-mod">University of Michigan - Dearborn</h3>
-								<h4>B.S. Computer Science</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								</p>
-							</div>
-						</div>
-						<div class="res-hr2"></div>
+								 	<section id="download">
+								 		<h2><span>&raquo;Download</span></h2>
+								 		<p>Download/fork the source code: <a href="https://github.com/syndicatefx/cli">Github</a></br>
+								 		Depends on jQuery</br>
+								 	License: MIT</p>
+								 </section>
 
-						<div id="res-skills" class="row">
-							<div class="res-title col-lg-3 col-sm-12 col-xs-12"><h2>Skills</h2></div>
-							<div class="col-lg-9 res-skillset">
+								 <section id="error">
+								 	<p>Command not found!<p> 
+								 		<p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
+								 	</section>
 
-								<div class="skill res-desc col-lg-3 col-sm-3 col-xs-3">
-									<ul>
-										<li>C</li>
-										<li>C++</li>
-										<li>C#</li>
-										<li>Java</li>
-										<li>PHP</li>
-									</ul>
-									</div
-									><div class="skill res-desc col-lg-3 col-sm-3 col-xs-3">
-										<ul>
-											<li>HTML</li>
-											<li>CSS</li>
-											<li>Javascript</li>
-											<li>Bootstrap</li>
-											<li>jQuery</li>
-										</ul>
-									</div>
-									<div class="skill res-desc col-lg-3 col-sm-3 col-xs-3">
-										<ul>
-											<li>Node JS</li>
-											<li>SQL</li>
-											<li>MySQL</li>
-											<li>Postgresql</li>
-											<li>MongoDB</li>
-											<li>Express</li>
-										</ul>
-									</div>
-									<div class="skill res-desc col-lg-3 col-sm-3 col-xs-3">
-										<ul>
-											<li>Unity3D</li>
-											<li>Photoshop</li>
-											<li>Unreal 4</li>
-											<li>Construct 2</li>
-											<li>Blender</li>
-										</ul>
-									</div>
+								 	<section id="help">
+								 		<h2><span>&raquo;Help?</span></h2>
+								 		<p><span>Type [command] + <kbd>Enter</kbd></span></p>
+								 		<ul>
+								 			<li>'home' -- Thats obvious!</li>
+								 			<li>'about' -- What's this for</li>
+								 			<li>'usage' -- How to</li>
+								 			<li>'download' -- Download + license</li>
+								 			<li>'help' -- displays this list</li>
+								 		</ul>
+								 	</section>
 
-								</div>		
-							</div>
-							<div class="res-hr2"></div>
+								 	<span class="command">brandonleon:/$<input type="text"></span>
+								 </main>
 
-							<div id="res-experience" class="row">
-								<div class="res-title col-lg-3 col-sm-12 col-xs-12"><h2>Experience</h2></div>
-								<div class="col-lg-9 res-desc res-exp">
 
-									<div class="col-lg-12 col-sm-6 col-xs-6">
-									<h3 class="h2-mod">Android Studio Project</h3>
-									<h4>Month Year</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p><br>
-									</div>
-
-									<div class="col-lg-12 col-sm-6 col-xs-6">
-									<h3 class="h2-mod">Unity 3D Senior Design Project</h3>
-									<h4>Month Year</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p><br>
-									</div>
-
-									<div class="col-lg-12 col-sm-6 col-xs-6">
-									<h3 class="h2-mod">Unreal 4 Game Project</h3>
-									<h4>Month Year</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p><br>
-									</div>
-
-									<div class="col-lg-12 col-sm-6 col-xs-6">
-									<h3 class="h2-mod">Software Engineering Project</h3>
-									<h4>Month Year</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p><br>
-									</div>
-
-									<div class="col-lg-12 col-sm-6 col-xs-6">
-									<h3 class="h2-mod">Unity 3D Game Project</h3>
-									<h4>Month Year</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p><br>
-									</div>
-
-									<div class="col-lg-12 col-sm-6 col-xs-6">
-									<h3 class="h2-mod">Construct 2 2D Game Project</h3>
-									<h4>Month Year</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p><br>
-									</div>
-
-									<div class="col-lg-12 col-sm-6 col-xs-6">
-									<h3 class="h2-mod">XNA 2D Game Project</h3>
-									<h4>Month Year</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p><br>
-									</div>
 
 								</div>
 							</div>
 
+
 						</div>
+						<br/>		
 					</div>
-				</div>
+					<!-- Résumé -->
+					<div id="resume"><div class="inner">
+						<p class="tagline">Résumé</p>
+						<!-- Résumé : Education -->
+						<p class="section-tagline" style="text-align:left;">Education</p>
 
-				<div id="Portfolio" class="links"></div>
-				<div class="info">Portfolio <br>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
+						<!-- Résumé : Education : Udemy -->
+						<p>
+							<a target="_blank" href="https://www.udemy.com/"><img class="icon" src="assets/images/UdemyLogo.jpg"></a><b>Udemy Online Learning Platform</b>
+							<span class="right"><i>Fall 2018 - Spring 2019</i></span><br/>
+							<b>Furthering Education</b>
+							<span class="right"><i>Online</i></span><br/><br/>
+							Attended Web Development Bootcamp course, Android Studio Course, and SQL course.<br/><br/>
+							<span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span class="skill">Bootstrap</span><span class="skill">jQuery</span><span class="skill">Node.js</span><span class="skill">SQL</span><span class="skill">PostgreSQL</span><span class="skill">Java</span><span class="skill">Android Studio Oreo</span>
+						</p>
+						<br/><br/>
+
+						<!-- Résumé : Education : UMD -->
+						<p>
+							<a target="_blank" href="https://umdearborn.edu/"><img class="icon" src="assets/images/UMD.jpg"></a><b>University of Michigan-Dearborn</b>
+							<span class="right"><i>Graduated: Aug 2018</i></span><br/><b>Computer Science, B.S.</b>
+							<span class="right"><i>Dearborn, MI</i></span><br/><br/>
+							Relevant Coursework:<br/>
+							<ul style="list-style:circle;">
+								<li>Computer Science I & II</li>
+								<li>Computer Organization and Assembly Language</li>
+								<li>Data Structures</li>
+								<li>Software Engineering</li> 
+								<li>Computer Networks & Distributed Systems</li>
+								<li>Senior Design Seminar I & II</li>
+								<li>Discrete Structures I & II</li>
+								<li>C# Programming</li>
+								<li>Mobile Application Development</li>
+								<li>Computer Graphics</li>
+								<li>Operating Systems</li>
+								<li>Artificial Intelligence</li>
+								<li>Computer Game Design I & II</li>				
+							</ul>
+							<span class="skill">C/C++</span><span class="skill">Java</span><span class="skill">Microsoft Visual Studio</span><span class="skill">Unity3D</span><span class="skill">Construct 2</span><span class="skill">Unreal Engine 4</span><span class="skill">Microsoft XNA</span><span class="skill design">Photoshop</span>
+						</p>
+						<br/>
+						<!-- Résumé : Education : WCCCD -->
+						<p>
+							<a target="_blank" href="http://www.wcccd.edu/"><img class="icon" src="assets/images/wcccd.jpg"></a><b>Wayne County Community College</b>
+							<span class="right"><i>Attended: 2009 - 2011</i></span><br/>
+							<b>Initial Study</b>
+							<span class="right"><i>Detroit, MI</i></span><br/><br/>
+							Studied Computer Information Systems and Web Design for six semesters before attending university.<br/><br/>
+							Relevant Coursework:<br/>
+							<ul style="list-style:circle;">
+								<li>Computer Information Systems</li>
+								<li>Structured Design</li>
+								<li>Computer Business Applications</li>
+								<li>Visual Basic Programming</li> 
+								<li>Internet Foundations</li>
+								<li>Java Programming Language</li>
+								<li>C Programming Language</li>
+								<li>Introduction to Operating Systems</li>
+								<li>Linux</li>
+								<li>Internet Web Page Design</li>
+								<li>Graphic Design</li>
+								<li>Web Design Methodology and Technology</li>
+								<li>JavaScript</li>	
+								<li>E-commerce Strategies and Practices</li>
+								<li>Understanding and Developing Multimedia</li>			
+							</ul>
+							<span class="skill">C/C++</span><span class="skill">Java</span><span class="skill">Html/CSS/JS</span><span class="skill design">Photoshop</span><span class="skill">Microsoft Office</span><span class="skill">Linux</span>
+						</p>
+						<br/>
 
 
 
-				<div id="Photography" class="links"></div>
-				<div class="info">
-					<!-- <div class="row" style="display:flex; flex-wrap: wrap;> -->
+
+
+						<!-- Résumé : Project Experience -->
+						<p class="section-tagline" style="text-align:left;">Project Experience</p>
+
+						<!-- Résumé : Project Experience : Senior Design UMD -->
+						<p>
+							<a target="_blank" href="https://umdearborn.edu/"><img class="icon" src="assets/images/UMD.jpg"></a><b>University of Michigan-Dearborn</b>
+							<span class="right"><i>Sept 2016 - May 2017</i></span><br/>
+							<b>Senior Design Project</b>
+							<span class="right"><i>Dearborn, MI</i></span><br/><br/>
+							Constructed an Android tablet application, in collaboration with a client for two semesters. Functioned as a team leader of four others, overseeing the designing, coding, and testing of the application using Unity 3D.<br/><br/>
+							<span class="skill">Android Mobile</span><span class="skill">C#</span><span class="skill">Unity3D</span><span class="skill design">Photoshop</span><span class="skill">XML</span>
+						</p>
+						<br/>
+
+						<!-- Résumé : Project Experience : Game Design Class Projects UMD -->
+						<p>
+							<a target="_blank" href="https://umdearborn.edu/"><img class="icon" src="assets/images/UMD.jpg"></a><b>University of Michigan-Dearborn</b>
+							<span class="right"><i>Sept 2014 - May 2015</i></span><br/>
+							<b>Video Game Design Projects</b>
+							<span class="right"><i>Dearborn, MI</i></span><br/><br/>
+							Designed 2D and 3D games for Windows environment, with a partner on three projects over two semesters. Demonstrated ability in building and designing interactive games using Unity 3D, Unreal 4, and Construct 2.
+							<br/><br/>
+							<span class="skill">C#</span><span class="skill">Unity3D</span><span class="skill">Unreal 4</span><span class="skill">Construct 2</span><span class="skill design">Photoshop</span>
+						</p>
+						<br/>
+
+
+						<br/><br/><br/><br/>
+					</div></div>
+					<!-- Portfolio -->
+					<div id="projects"><div class="inner">
+						<p class="tagline">Projects and Fun</p>
+
+						<div class="portfolio-thumb portfolio-big">
+							<a class="image-popup-no-margins" href="assets/images/SeniorDesignPoster.png"><img src="assets/images/SeniorDesignPoster.png"></a>
+							<p class="description"><b>Senior Design Project (Foggy Cove Pirates)</b>&nbsp;&nbsp; Worked with a client for two semesters to construct an Android tablet application. Designed, coded, and tested the application in Unity 3D. Successfully led a team of four resulting in project completion and client satisfaction.</p>
+						</div>
+
 						<div class="row">
-
-						<div class="col-lg-4 col-sm-6">
-							<div class="thumbnail">
-								<a href="assets/images/photography/couple.jpg" data-toggle="lightbox" data-gallery="photo-gallery">
-									<img src="assets/images/photography/couple.jpg">
-								</a>
+							<div class="portfolio-thumb">
+								<a class="image-popup-no-margins" href="link goes here"><img src="link also goes here too"></a>
+								<p class="description"><b>Title</b>&nbsp;&nbsp; Description goes here</p>
+							</div>
+							<div class="portfolio-thumb">
+								<a class="image-popup-no-margins" href="link goes here"><img src="link also goes here too"></a>
+								<p class="description"><b>Title</b>&nbsp;&nbsp; Description goes here</p>
+							</div>
+						</div>						
+						<div class="row">
+							<div class="portfolio-thumb">
+								<a class="image-popup-no-margins" href="link goes here"><img src="link also goes here too"></a>
+								<p class="description"><b>Title</b>&nbsp;&nbsp; Description goes here</p>
+							</div>
+							<div class="portfolio-thumb">
+								<a class="image-popup-no-margins" href="link goes here"><img src="link also goes here too"></a>
+								<p class="description"><b>Title</b>&nbsp;&nbsp; Description goes here</p>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
-							<div class="thumbnail">
-								<a href="assets/images/photography/catMouth.jpg" data-toggle="lightbox" data-gallery="photo-gallery">
-									<img src="assets/images/photography/catMouth.jpg">
-								</a>
+						<div class="row">
+							<div class="portfolio-thumb">
+								<a class="popup-vimeo" href="video link goes here"><img src="thumbnail goes here"></a>
+								<p class="description"><b>Title</b>&nbsp;&nbsp; Description goes here </p>
+							</div>
+							<div class="portfolio-thumb">
+								<a class="popup-vimeo" href="video link goes here"><img src="thumbnail goes here"></a>
+								<p class="description"><b>Title</b>&nbsp;&nbsp; Description goes here </p>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
-							<div class="thumbnail">
-								<a href="assets/images/photography/deck.jpg" data-toggle="lightbox" data-gallery="photo-gallery">
-									<img src="assets/images/photography/deck.jpg">
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-sm-6">
-							<div class="thumbnail">
-								<a href="assets/images/photography/spider.jpg" data-toggle="lightbox" data-gallery="photo-gallery">
-									<img src="assets/images/photography/spider.jpg">
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-sm-6">
-							<div class="thumbnail">
-								<a href="assets/images/photography/treeRoots.jpg" data-toggle="lightbox" data-gallery="photo-gallery">
-									<img src="assets/images/photography/treeRoots.jpg">
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-sm-6">
-							<div class="thumbnail">
-								<a href="assets/images/photography/waterfall.jpg" data-toggle="lightbox" data-gallery="photo-gallery">
-									<img src="assets/images/photography/waterfall.jpg">
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-sm-6">
-							<div class="thumbnail">
-								<a href="assets/images/photography/bat.jpg" data-toggle="lightbox" data-gallery="photo-gallery">
-									<img src="assets/images/photography/bat.jpg">
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-sm-6">
-							<div class="thumbnail">
-								<a href="assets/images/photography/moon.jpg" data-toggle="lightbox" data-gallery="photo-gallery">
-									<img src="assets/images/photography/moon.jpg">
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-sm-6">
-							<div class="thumbnail">
-								<a href="assets/images/photography/spider2.jpg" data-toggle="lightbox" data-gallery="photo-gallery">
-									<img src="assets/images/photography/spider2.jpg">
-								</a>
-							</div>
-						</div>
-
-					</div>
-				</div>
+					</div></div>
 
 
-				<div id="Contact" class="links"></div>
-				<div class="info">
+					<!--Footer-->
+					<div  id ="footer"><div class="inner">
+						© 2019 Brandon Leon. 
+						<span class="right">
+							<a target="_blank" href="mailto:bsleon@umich.edu">Email</a>&nbsp;//&nbsp;
+							<a target="_blank" href="https://www.linkedin.com/in/brandonleon/">LinkedIn</a>&nbsp;//&nbsp;
+							<a target="_blank" href="https://twitter.com/webusign">Twitter</a>
+						</span>
+					</div></div>
+					<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+					<script src="assets/js/jquery.fixedTOC.js"></script>
+					<script src="assets/js/jquery.magnific-popup.js"></script>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							$('.image-popup-no-margins').magnificPopup({
+								type: 'image',
+								closeOnContentClick: true,
+								closeBtnInside: false,
+								fixedContentPos: true,
+		          mainClass: 'mfp-no-margins mfp-with-zoom', // Class to remove default margin from left and right side
+		          image: {
+		          	verticalFit: true
+		          },
+		          zoom: {
+		          	enabled: true,
+		            duration: 300 // Duration variable also in CSS
+		        }
+		    });
 
-					<section id="contact">
-						<div class="container">
-							<!-- <div class="well well-sm"> -->
-							<div class="row">
-								<div class="col-lg-6"><h3><strong>Contact Me</strong></h3></div>
-							</div>
-							<div class="row">
-								<div class="contact-hr1 col-lg-6"></div>
-							</div>
+							$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+								disableOn: 700,
+								type: 'iframe',
+								mainClass: 'mfp-fade',
+								removalDelay: 160,
+								preloader: false,
 
-							<div class="row">
-								<div class="col-lg-5 col-md-6 map">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5897.4089175299705!2d-83.025396!3d42.348824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824d324c4bc23ad%3A0x45a5fe00f46e8bcd!2sDetroit%2C+MI+48207!5e0!3m2!1sen!2sus!4v1536900702724" width="450" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-								</div>
+								fixedContentPos: false
+							});
 
-								<div class="col-lg-5 col-md-6 form">
-									<h4><strong>Get in Touch</strong></h4>
-									<form>
-										<div class="form-group">
-											<input type="text" class="form-control" name="" value="" placeholder="Name">
-										</div>
-										<div class="form-group">
-											<input type="email" class="form-control" name="" value="" placeholder="E-mail">
-										</div>
-										<div class="form-group">
-											<input type="tel" class="form-control" name="" value="" placeholder="Phone">
-										</div>
-										<div class="form-group">
-											<textarea class="form-control" name="" rows="3" placeholder="Message"></textarea>
-										</div>
-										<button class="btn btn-default" type="submit" name="button">
-											<i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit
-										</button>
-									</form>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
+							$('.simple-ajax-popup-align-top').magnificPopup({
+								type: 'ajax',
+								alignTop: true,
+		          overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+		      });
 
-
-			</div> <!--end container-->
-
-			
-
-			<div id="emptySpace"></div>
-
-			<!-- Footer -->
-			<div class="footer">
-				<div class="container">
-					<footer class="page-footer font-small blue">
-
-						<!-- Copyright -->
-						<div class="footer-copyright text-center py-3">© 2018 Copyright: Brandon Leon
-						</div>
-						<!-- Copyright -->
-
-						<div class="contactInfo">
-							<div id="email"><a href="mailto:bsleon@umich.edu"><i class="far fa-envelope"></i></a></div>
-							<div id="linkedin"><a href="https://www.linkedin.com/in/brandonleon/" target="blank"><i class="fab fa-linkedin"></i></a></div>
-							<div id="facebook"><a href="https://www.facebook.com/brandon.leon.9022" target="blank"><i class="fab fa-facebook-square"></i></a></div>
-						</div>
-
-					</footer>
-				</div>
-			</div>
-			<!-- Footer -->
+							$('.simple-ajax-popup').magnificPopup({
+								type: 'ajax'
+							});
+						});
+					</script>
+					<script>
+		// call the plugin on the "#toc" element
+		$('#toc').fixedTOC({
+			menuOpens: 'click', // or 'mouseenter'
+			scrollSpeed: 1000,
+			menuSpeed: 300,
+			useSubMenus: false,
+			resetSubMenus: false,
+			topLinkWorks: true
+		});
+	</script>
 
 
-			<!-- JS -->
-			<script type="text/javascript" src="assets/js/portfolio.js"></script>
-
-			<!-- JQuery -->
-			<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
-			<!-- Bootstrap Latest compiled and minified JavaScript -->
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-			<!-- EKKO LIGHTBOX -->
-			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-
-			<!-- chess engine-->
-			<!-- <script src="assets/lib/myChessEngine/myChessEngine.js" type="text/javascript"></script> -->
+	<!-- Script for command window-->
+	<script type="text/javascript">
+		(function(e){"use strict";e.fn.textTyper=function(t){var n={typingClass:"typing",beforeAnimation:function(){},afterAnimation:function(){},speed:10,nextLineDelay:400,startsFrom:0,repeatAnimation:false,repeatDelay:4e3,repeatTimes:1,cursorHtml:'<span class="cursor">|</span>'},r=e.extend({},n,t);this.each(function(){var t=e(this),n=1,i="typingCursor";var s=t,o=s.length,u=[];while(o--){u[o]=e.trim(e(s[o]).html());e(s[o]).html("")}t.init=function(e){var n=r.beforeAnimation;if(n)n();t.animate(0)};t.animate=function(o){var a=s[o],f=r.typingClass,l=r.startsFrom;e(a).addClass(f);var c=setInterval(function(){var f=r.cursorHtml;f=e("<div>").append(e(f).addClass(i)).html();e(a).html(u[o].substr(0,l)+f);l++;if(u[o].length<l){clearInterval(c);o++;if(s[o]){setTimeout(function(){e(a).html(u[o-1]);t.animate(o)},r.nextLineDelay)}else{e(a).find("."+i).remove();if(r.repeatAnimation&&(r.repeatTimes==0||n<r.repeatTimes)){setTimeout(function(){t.animate(0);n++},r.repeatDelay)}else{var h=r.afterAnimation;if(h)h()}}}},r.speed)};t.init()});return this}})(jQuery)
 
 
-		</body>
-		</html>
+// Let's do it!!
+$(document).ready(function() {
+
+	$('.command').hide();
+	$('input[type="text"]').focus();
+	$('#home').addClass('open');
+	$('#home').textTyper({
+		speed:20,
+		afterAnimation:function(){
+			$('.command').fadeIn();
+			$('input[type="text"]').focus();
+			$('input[type="text"]').val('');
+		}
+	});
+
+// get array of section ids, that exist in DOM
+var sectionArray = [];
+// We are using <section> here, you can use <div> or <article> if you want
+$('section').each( function(i,e) {
+    //you can use e.id instead of $(e).attr('id')
+    sectionArray.push($(e).attr('id'));
+});
+
+// Debug
+//console.log(sectionArray);
+
+
+
+// Command Input------------------------------
+
+$('input[type="text"]').keyup(function(e){
+
+    if(e.which == 13){// ENTER key pressed
+
+    	$('.command').hide();
+    	var destination = $('input[type="text"]').val();
+
+      // Display section with id == destination and hide all others
+      $('section[id="' + destination + '"]').addClass('open').siblings().removeClass('open');
+
+      // If destination does not match our array of section ids, display error section
+      if($.inArray(destination, sectionArray) == -1){
+      	$('#error').addClass('open');
+      	$('#error').siblings().removeClass('open');
+      }
+
+      // All sections with class .open init textTyper
+      $('.open').textTyper({
+      	speed:20,
+      	afterAnimation:function(){
+      		$('.command').fadeIn();
+      		$('input[type="text"]').focus();
+      		$('input[type="text"]').val('');
+      	}
+      });
+
+    }// end if ENTER key pressed
+
+  });// end keyup function
+
+// End Command Input-----------------------------
+
+});
+
+</script>
+
+</body>
+</html>
