@@ -553,6 +553,7 @@ height: 800px !important;
 max-width: 1000px !important;
 }
 
+
 /*********************CHESS*********************/
 #board {
     width: 100% !important;
@@ -574,6 +575,10 @@ max-width: 1000px !important;
     /*float: right;*/
     border: solid 1px gray;
     padding: 20px;
+}
+
+.chessinfo span{
+  color: black;
 }
 
 .move-history {

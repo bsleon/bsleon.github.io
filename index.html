@@ -261,7 +261,7 @@
 
 							<div class="row">
 								<div class="portfolio-thumb" id="my-popup">
-									<a id="open-popup" href="FractalTree/FractalTree.html"><img src="assets/images/fractalTree.jpg"></a>
+									<a id="open-popup2" href="FractalTree/FractalTree.html"><img src="assets/images/fractalTree.jpg"></a>
 									<p class="description"><b>Fractal Tree</b>&nbsp;&nbsp; You can design your own fractal tree by manipulating how many branches you want and their sizes and angles.</p>
 								</div>
 
@@ -323,13 +323,23 @@
 								        src: 'chess.html',
 								        type: 'iframe' // this overrides default type
 								      },
+								      
+								      ],
+								    gallery: {
+								      enabled: false
+								    },
+								    type: 'image' // this is a default type
+								});
+
+								$('#open-popup2').magnificPopup({
+									   items: [
 								      {
 								        src: 'FractalTree/FractalTree.html',
 								        type: 'iframe' // this overrides default type
 								      },
 								      ],
 								    gallery: {
-								      enabled: true
+								      enabled: false
 								    },
 								    type: 'image' // this is a default type
 								});

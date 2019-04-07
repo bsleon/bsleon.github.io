@@ -13,15 +13,17 @@ function setup() {
 }
 
 function mousePressed() {
-  for (var i = tree.length - 1; i >= 0; i--) {
-    if (!tree[i].finished) {
-      tree.push(tree[i].branchA());
-      tree.push(tree[i].branchB());
-      tree.push(tree[i].branchC());
+  if(radioValue == "Ternary Tree"){
+    for (var i = tree.length - 1; i >= 0; i--) {
+      if (!tree[i].finished) {
+        tree.push(tree[i].branchA());
+        tree.push(tree[i].branchB());
+        tree.push(tree[i].branchC());
+      }
+      tree[i].finished = true;
     }
-    tree[i].finished = true;
+    count++;
   }
-  count++;
 
   /*if (count === 6) {
     for (var i = 0; i < tree.length; i++) {
