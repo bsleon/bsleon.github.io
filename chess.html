@@ -28,33 +28,41 @@
 	<!-- CHESS -->
 	<br>
 	<br>
+	<div class="row">
+		<div class="col-lg-6 col-sm-6 col-xs-6">
+			<div id="board" class="container2" style="width: 800px"></div>
+			<br>
+			<br>
+		</div>
 
-	<div id="board" class="container" style="width: 800px"></div>
-	<br>
-	<br>
-	<div class="chessinfo">
-		Search depth:
-		<select id="search-depth">
-			<option value="1">1</option>
-			<option value="2">2</option>
-			<option value="3" selected>3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-		</select>
+		<div class="col-lg-2 col-sm-2 col-xs-2">
+			<div class="chessinfo">
+				Search depth:
+				<select id="search-depth">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3" selected>3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
 
-		<br>
-		<span>Positions evaluated: <span id="position-count"></span></span>
-		<br>
-		<span>Time: <span id="time"></span></span>
-		<br>
-		<span>Positions/s: <span id="positions-per-s"></span> </span>
-		<br>
-		<br>
-		<div id="move-history" class="move-history"></div>
-		<br>
-		<br>
+				<br>
+				<span>Positions evaluated: <span id="position-count"></span></span>
+				<br>
+				<span>Time: <span id="time"></span></span>
+				<br>
+				<span>Positions/s: <span id="positions-per-s"></span> </span>
+				<br>
+				<br>
+				<div id="move-history" class="move-history"></div>
+				<br>
+				<br>
 
-		<button type="button" class="btn btn-primary reset-board">Reset</button>
+				<button type="button" class="btn btn-primary reset-board">Reset</button>
+			</div>
+		</div>
+
+
 	</div>
 	<!-- END CHESS -->
 

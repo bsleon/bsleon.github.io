@@ -247,12 +247,14 @@
 							</div>
 
 							<div class="row">
-								<div class="portfolio-thumb">
-									<a class="image-popup-no-margins" href="link goes here"><img src="link also goes here too"></a>
-									<p class="description"><b>Title</b>&nbsp;&nbsp; Description goes here</p>
+
+								<div class="portfolio-thumb  white-popup" id="my-popup">
+									<a id="open-popup" href="https://bsleon.github.io/chess"><img src="link also goes here too"></a>
+									<p class="description"><b>Chess</b>&nbsp;&nbsp; Chess Game I made</p>
 								</div>
+
 								<div class="portfolio-thumb">
-									<a class="image-popup-no-margins" href="link goes here"><img src="link also goes here too"></a>
+									<a class="open-popup-link" href="link goes here"><img src="link also goes here too"></a>
 									<p class="description"><b>Title</b>&nbsp;&nbsp; Description goes here</p>
 								</div>
 							</div>						
@@ -291,22 +293,38 @@
 						<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 						<script src="assets/js/jquery.fixedTOC.js"></script>
 						<script src="assets/js/jquery.magnific-popup.js"></script>
+						
 						<script type="text/javascript">
+
 							$(document).ready(function() {
+
 								$('.image-popup-no-margins').magnificPopup({
 									type: 'image',
 									closeOnContentClick: true,
 									closeBtnInside: false,
 									fixedContentPos: true,
-		          mainClass: 'mfp-no-margins mfp-with-zoom', // Class to remove default margin from left and right side
-		          image: {
-		          	verticalFit: true
-		          },
-		          zoom: {
-		          	enabled: true,
-		            duration: 300 // Duration variable also in CSS
-		        }
-		    });
+					          		mainClass: 'mfp-no-margins mfp-with-zoom', // Class to remove default margin from left and right side
+						            image: {
+						          		verticalFit: true
+						            },
+						            zoom: {
+						          		enabled: true,
+						            	duration: 300 // Duration variable also in CSS
+						        	}
+					    		});
+
+					    		$('#open-popup').magnificPopup({
+									   items: [
+								      {
+								        src: 'chess.html',
+								        type: 'iframe' // this overrides default type
+								      },
+								      ],
+								    gallery: {
+								      enabled: true
+								    },
+								    type: 'image' // this is a default type
+								});
 
 								$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
 									disableOn: 700,
@@ -321,15 +339,18 @@
 								$('.simple-ajax-popup-align-top').magnificPopup({
 									type: 'ajax',
 									alignTop: true,
-		          overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
-		      });
+		          					overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+		      					});
 
 								$('.simple-ajax-popup').magnificPopup({
 									type: 'ajax'
 								});
+
 							});
 						</script>
-						<script>
+
+
+		<script>
 		// call the plugin on the "#toc" element
 		$('#toc').fixedTOC({
 			menuOpens: 'click', // or 'mouseenter'
