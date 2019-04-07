@@ -89,8 +89,9 @@ a img {
 
 #illustration img {
   padding-top: 150px;
-  width: 50%;
-  min-width:800px;
+  height: auto;
+  width: 35%;
+  /*min-width:800px;*/
 }
 
 #illustration p {
@@ -127,7 +128,7 @@ a img {
   background-color: #4C5364;
   background-image: url('../images/circuit2.png');
   background-size: 20%;
-  height: 1020px;
+  height: 700px;
   margin-top:-30px;
   padding-top: 60px;
   background-attachment: fixed;
@@ -135,26 +136,33 @@ a img {
 
 #code {
 /*  margin-top:150px;*/
-  border-radius: 5px;
+  border-radius: 5px 5px 5px 5px;
   width:750px;
   margin: 0 auto;
   padding-top:15px;
   font-size:30px;
   background: #ccc;
-  height: 700px;
+  height: 256px;
   font-family: 'Monaco', 'Courier New';
   text-align: left;
   font-size:13px;
   color: #fafafa;
 }
 
+#codeText{
+  color:#000000;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
 #console {
   width:670px;
   padding: 40px;
-  height: 620px;
+  height: 256px;
   margin:0 auto;
   /*background: #383737;*/
   background: #000000;
+  border-radius: 0px 0px 5px 5px;
 }
 
 span.answer {
@@ -532,6 +540,7 @@ ul.toc {
   #illustration {
     overflow: hidden;
   }
+
 
   #resume .inner {
     width: 85%;
