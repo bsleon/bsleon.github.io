@@ -538,6 +538,14 @@ ul.toc {
   text-align: center;
 }
 
+.popup-youtube {
+  .youtube-click {
+    outline:none;
+    width: 50px;
+    heignt: 50px;
+  }
+}
+
 .mfp-iframe-holder .mfp-content {
 line-height: 0;
 width: 100%;
