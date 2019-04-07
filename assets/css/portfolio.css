@@ -541,8 +541,8 @@ ul.toc {
 
 .youtube-click {
   outline:none;
-  width: 200px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
 
 }
 
