@@ -338,7 +338,7 @@ img.icon:hover {
 /*CONSOLE WINDOW*/
 span{
   display: block;
-  color:#999;
+  color:#ffffff;
   line-height:1;
 }
 kbd{
@@ -431,7 +431,7 @@ section{
 }
 
 a.toc-link {
-  color: #ccc;
+  color: #ffffff;
   position: relative;
   display: block;
   z-index: 1000;

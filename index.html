@@ -250,29 +250,33 @@
 
 								<div class="portfolio-thumb" id="my-popup">
 									<a id="open-popup" href="chess.html"><img src="assets/images/chessBoard.jpg"></a>
-									<p class="description"><b>Chess</b>&nbsp;&nbsp; Chess Game I made</p>
+									<p class="description"><b>Chess</b>&nbsp;&nbsp; Chess Game I made. Uses a javascript engine to play against you.</p>
 								</div>
 
 								<div class="portfolio-thumb">
 									<a class="popup-youtube" href="https://www.youtube.com/watch?v=tDHCce5U6Bo"><img src="assets/images/Nightshade.jpg" class="youtube-click"></a>
 									<p class="description"><b>Nightshade</b>&nbsp;&nbsp; A Game I made in Video Game Design II with a partner in Unreal Engine 4</p>
 								</div>
-							</div>						
+							</div>	
+
 							<div class="row">
-								<div class="portfolio-thumb">
-									<a class="image-popup-no-margins" href=""><img src=""></a>
-									<p class="description"><b>Title</b>&nbsp;&nbsp; Description goes here</p>
+								<div class="portfolio-thumb" id="my-popup">
+									<a id="open-popup" href="FractalTree/FractalTree.html"><img src="assets/images/fractalTree.jpg"></a>
+									<p class="description"><b>Fractal Tree</b>&nbsp;&nbsp; You can design your own fractal tree by manipulating how many branches you want and their sizes and angles.</p>
 								</div>
+
 								<div class="portfolio-thumb">
 									<a class="image-popup-no-margins" href=""><img src=""></a>
 									<p class="description"><b>Title</b>&nbsp;&nbsp; Description goes here</p>
 								</div>
 							</div>
+
 							<div class="row">
 								<div class="portfolio-thumb">
 									<a class="popup-vimeo" href=""><img src=""></a>
 									<p class="description"><b>Title</b>&nbsp;&nbsp; Description goes here </p>
 								</div>
+
 								<div class="portfolio-thumb">
 									<a class="popup-vimeo" href=""><img src=""></a>
 									<p class="description"><b>Title</b>&nbsp;&nbsp; Description goes here </p>
@@ -317,6 +321,10 @@
 									   items: [
 								      {
 								        src: 'chess.html',
+								        type: 'iframe' // this overrides default type
+								      },
+								      {
+								        src: 'FractalTree/FractalTree.html',
 								        type: 'iframe' // this overrides default type
 								      },
 								      ],
