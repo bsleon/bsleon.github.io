@@ -539,11 +539,11 @@ ul.toc {
 }
 
 
-  .youtube-click {
-    outline:none;
-    width: 200px;
-    height: 100px;
-  
+.youtube-click {
+  outline:none;
+  width: 200px;
+  height: 100px;
+
 }
 
 .mfp-iframe-holder .mfp-content {
