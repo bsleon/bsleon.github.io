@@ -32,6 +32,7 @@ a img {
 
 .right {
   float: right;
+  color: gray;
 }
 
 #header {
@@ -206,6 +207,7 @@ span.answer {
 }
 
 .skill {
+  color: gray;
   border: 1px solid #50a9d1;
   margin-right: 10px;
   text-transform: uppercase;
@@ -321,7 +323,7 @@ img.icon:hover {
   background: #fafafa;
   min-height: 50px;
   text-align: left;
-  color: #ffffff;
+  color: #ffffff !important;
   padding-top: 20px;
   font-size: 15px;
   line-height: 20px;
