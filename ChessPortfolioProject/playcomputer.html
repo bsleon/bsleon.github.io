@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.min.css">
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules\chess.js\chess.js"></script>
+    <script src="node_modules\@chrisoakman\chessboardjs\dist\chessboard-1.0.0.min.js"></script>
+
+    <title>CHESSFEN</title>
+</head>
+
+<body>
+  <!-- START NAVBAR -->
+  <div class="container pl-0">
+    <nav id="bootstrap-menu" class="navbar navbar-expand-lg navbar-dark navbar-default navbar-fixed-top pl-0">
+      <!-- <a class="navbar-brand" href="index.html"><i class="fas fa-chess-knight mr-1"></i>CHESSFEN</a> -->
+      <a class="navbar-brand" href="index.html"><i class="fas fa-chess ml-0"></i>CHESSFEN</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
+        aria-label="Toggle navigation" data-target="#myNavbar">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+      </button>
+
+      <div class="collapse navbar-collapse ml-5" id="myNavbar">
+        <ul class="nav navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Board</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="playcomputer.html">Play Computer</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Instructions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link loginBtn" data-toggle="modal" data-target="#loginModal">Login/Signup</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- END NAVBAR -->
+
+    <!--LOGIN MODAL -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <a href=""><i class="fab fa-google"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-microsoft"></i></a>
+                        <a href=""><i class="fa fa-user-plus"></i></a>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOGIN MODAL -->
+
+    <div class="container">
+        <div class="row">
+            <!-- TIME -->
+            <div class="col-12 col-md-8">
+                <!-- <span class="h3" id="time1">0:05:00</span> -->
+                <div id="myBoard" style="width: 100%"></div>
+                <!-- <span class="h3" id="time2">0:05:00</span> -->
+                <hr>
+                <div id="engineStatus">...</div>
+            </div>
+            <!-- END TIME -->
+
+            <div class="col-12 col-md-4">
+
+                <form class="form-horizontal">
+                    <!-- SET TIME, INCREMENT, AND SKILL LEVEL SETS -->
+                    <!-- <div class="form-group">
+                    <label for="timeBase" class="control-label col-xs-4 col-sm-6 col-md-4">Base time (min)</label>
+                    <div class="col-xs-4 col-sm-6 col-md-4">
+                        <input type="number" class="form-control" id="timeBase" value="5">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="timeInc" class="control-label col-xs-4 col-sm-6 col-md-4">Increment (sec)</label>
+                    <div class="col-xs-4 col-sm-6 col-md-4">
+                        <input type="number" class="form-control" id="timeInc" value="2">
+                    </div>
+                </div> -->
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="skillLevel" class="control-label">Skill Level (0-20)</label>
+                            <div class="">
+                                <input type="number" class="form-control" id="skillLevel" value="0" min="0" max="20">
+                            </div>
+                        </div>
+
+                        <!-- CHOOSE COLOR TO PLAY -->
+                        <div class="form-group col-6">
+                            <!-- <label for="color" class="control-label">I play</label> -->
+                            <div class="">
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-primary focus active" id="color-white"><input type="radio"
+                                            name="color">White</label>
+                                    <label class="btn btn-primary" id="color-black"><input type="radio"
+                                            name="color">Black</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END CHOOSE COLOR TO PLAY -->
+                    </div>
+                    <!-- END SET TIME, INCREMENT, AND SKILL LEVEL SETS -->
+
+
+                    <div class="row">
+
+
+                        <!-- <div class="form-group">
+                    <label for="showScore" class="control-label col-xs-4 col-sm-6 col-md-4">Show score</label>
+                    <div class="col-xs-4 col-sm-6 col-md-4">
+                        <input type="checkbox" class="form-control" id="showScore" checked>
+                    </div>
+                </div> -->
+                        <div class="form-group col-6">
+                            <label for="color" class="control-label"></label>
+                            <div class="">
+                                <button type="button" class="btn btn-dark" onclick="newGame()">New Game</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-6">
+                            <div class="">
+                                <label for="color" class="control-label mb-0 pb-0">Promote To:</label>
+                                <select id="promote" class="ml-2 mt-0">
+                                    <option value="q" selected>Queen</option>
+                                    <option value="r">Rook</option>
+                                    <option value="b">Bishop</option>
+                                    <option value="n">Knight</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MOVES HISTORY -->
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Moves:</h3>
+                        </div>
+                        <div class="col-12" id="pgn"></div>
+                    </div>
+                    <!-- END MOVES HISTORY -->
+                </form>
+
+                <!-- 
+                <h5>Evaluation</h5>
+                <pre id="evaluation"></pre> -->
+            </div>
+        </div>
+        <script src="js/enginegame.js"></script>
+        <script>
+            var wait_for_script;
+            var newGame = function () { };
+
+            /// We can load Stockfish.js via Web Workers or directly via a <script> tag.
+            /// Web Workers are better since they don't block the UI, but they are not always avaiable.
+            (function fix_workers() {
+                var script_tag;
+                /// Does the environment support web workers?  If not, include stockfish.js directly.
+                ///NOTE: Since web workers don't work when a page is loaded from the local system, we have to fake it there too. (Take that security measures!)
+                if (!Worker || (location && location.protocol === "file:")) {
+                    var script_tag = document.createElement("script");
+                    script_tag.type = "text/javascript";
+                    script_tag.src = "stockfish.js";
+                    script_tag.onload = init;
+                    document.getElementsByTagName("head")[0].appendChild(script_tag);
+                    wait_for_script = true;
+                }
+            }());
+
+            function init() {
+                var game = engineGame();
+
+                newGame = function newGame() {
+                    var baseTime = parseFloat($('#timeBase').val()) * 60;
+                    var inc = parseFloat($('#timeInc').val());
+                    var skill = parseInt($('#skillLevel').val());
+                    game.reset();
+                    game.setTime(baseTime, inc);
+                    game.setSkillLevel(skill);
+                    game.setPlayerColor($('#color-white').hasClass('active') ? 'white' : 'black');
+                    game.setDisplayScore($('#showScore').is(':checked'));
+                    game.start();
+                }
+
+                game.setSkillLevel
+
+                document.getElementById("skillLevel").addEventListener("change", function () {
+                    game.setSkillLevel(parseInt(this.value, 10));
+                });
+
+                newGame();
+            }
+
+            /// If we load Stockfish.js via a <script> tag, we need to wait until it loads.
+            if (!wait_for_script) {
+                document.addEventListener("DOMContentLoaded", init);
+            }
+        </script>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.navbar-toggler').on('click', function () {
+
+                $('.animated-icon').toggleClass('open');
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
