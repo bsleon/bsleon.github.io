@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.384a2b37.chunk.css",
-    "main.js": "/static/js/main.478ee055.chunk.js",
-    "main.js.map": "/static/js/main.478ee055.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.937ee446.js",
-    "runtime-main.js.map": "/static/js/runtime-main.937ee446.js.map",
-    "static/css/2.ee9ed397.chunk.css": "/static/css/2.ee9ed397.chunk.css",
-    "static/js/2.e4a53f3b.chunk.js": "/static/js/2.e4a53f3b.chunk.js",
-    "static/js/2.e4a53f3b.chunk.js.map": "/static/js/2.e4a53f3b.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.e6164edb1a88deeb13df884064ab3f1d.js": "/precache-manifest.e6164edb1a88deeb13df884064ab3f1d.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.ee9ed397.chunk.css.map": "/static/css/2.ee9ed397.chunk.css.map",
-    "static/css/main.384a2b37.chunk.css.map": "/static/css/main.384a2b37.chunk.css.map",
-    "static/js/2.e4a53f3b.chunk.js.LICENSE.txt": "/static/js/2.e4a53f3b.chunk.js.LICENSE.txt",
-    "static/media/all.css": "/static/media/fa-solid-900.f3a7d3b5.woff",
-    "static/media/font-awesome.css": "/static/media/fontawesome-webfont.fee66e71.woff"
+    "main.css": "/ReactChessPortfolioProject/static/css/main.384a2b37.chunk.css",
+    "main.js": "/ReactChessPortfolioProject/static/js/main.7ee24b26.chunk.js",
+    "main.js.map": "/ReactChessPortfolioProject/static/js/main.7ee24b26.chunk.js.map",
+    "runtime-main.js": "/ReactChessPortfolioProject/static/js/runtime-main.b17a2fd4.js",
+    "runtime-main.js.map": "/ReactChessPortfolioProject/static/js/runtime-main.b17a2fd4.js.map",
+    "static/css/2.3417277f.chunk.css": "/ReactChessPortfolioProject/static/css/2.3417277f.chunk.css",
+    "static/js/2.e4a53f3b.chunk.js": "/ReactChessPortfolioProject/static/js/2.e4a53f3b.chunk.js",
+    "static/js/2.e4a53f3b.chunk.js.map": "/ReactChessPortfolioProject/static/js/2.e4a53f3b.chunk.js.map",
+    "index.html": "/ReactChessPortfolioProject/index.html",
+    "precache-manifest.c19f2a09e15cb5425e39e64f44cbf313.js": "/ReactChessPortfolioProject/precache-manifest.c19f2a09e15cb5425e39e64f44cbf313.js",
+    "service-worker.js": "/ReactChessPortfolioProject/service-worker.js",
+    "static/css/2.3417277f.chunk.css.map": "/ReactChessPortfolioProject/static/css/2.3417277f.chunk.css.map",
+    "static/css/main.384a2b37.chunk.css.map": "/ReactChessPortfolioProject/static/css/main.384a2b37.chunk.css.map",
+    "static/js/2.e4a53f3b.chunk.js.LICENSE.txt": "/ReactChessPortfolioProject/static/js/2.e4a53f3b.chunk.js.LICENSE.txt",
+    "static/media/all.css": "/ReactChessPortfolioProject/static/media/fa-solid-900.f3a7d3b5.woff",
+    "static/media/font-awesome.css": "/ReactChessPortfolioProject/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.937ee446.js",
-    "static/css/2.ee9ed397.chunk.css",
+    "static/js/runtime-main.b17a2fd4.js",
+    "static/css/2.3417277f.chunk.css",
     "static/js/2.e4a53f3b.chunk.js",
     "static/css/main.384a2b37.chunk.css",
-    "static/js/main.478ee055.chunk.js"
+    "static/js/main.7ee24b26.chunk.js"
   ]
 }
