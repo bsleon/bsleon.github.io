@@ -387,6 +387,11 @@
 // Let's do it!!
 $(document).ready(function() {
 
+	// if(window.location.href==="https://bsleon.github.io/" || window.location.href ==="C:/Users/PC/Desktop/ProjectsAndUdemyCourses/MyPortfolio/index.html") {
+	if(window.location.href !== "https://brandonleon.dev/") {
+		window.location.href = "https://brandonleon.dev/";
+	}
+
 	$('.command').hide();
 	$('input[type="text"]').focus();
 	$('#home').addClass('open');
